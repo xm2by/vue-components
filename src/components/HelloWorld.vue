@@ -1,5 +1,8 @@
 <template>
   <div class="hello">
+    <area-picker></area-picker>
+    <area-picker
+      type="single"></area-picker>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -85,8 +88,13 @@
 
 <script>
 
+import AreaPicker from './AreaPicker/AreaPicker'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    AreaPicker
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
